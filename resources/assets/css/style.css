@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #4CAF50;
+    --primary-dark: #45a049;
+    --secondary-color: #2196F3;
+    --text-color: #333;
+    --light-gray: #f5f5f5;
+    --border-color: #ddd;
+    --shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-gray);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navigation-buttons {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 0 10px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.video-container {
+    position: relative;
+    margin: 30px auto;
+    max-width: 720px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+}
+
+canvas {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 8px;
+}
+
+.student-info {
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: var(--shadow);
+    max-width: 720px;
+}
+
+.student-info h2 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+#studentDetails {
+    margin-top: 15px;
+}
+
+#studentDetails p {
+    margin: 12px 0;
+    padding: 10px;
+    background: var(--light-gray);
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+#studentDetails strong {
+    color: var(--secondary-color);
+    margin-right: 10px;
+} 
